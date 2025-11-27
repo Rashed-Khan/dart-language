@@ -1,16 +1,14 @@
 class Student {
-  void display(String name, int id) {
-    print('Name is $name');
-    print('Name is $id');
-  }
 
-  Student(String name, int id) {
-    print('Name is $name');
-    print('Name is $id');
+  Student.nameConstructor1(int age, String name, int id) {
+    print('Age1 is $age');
+    print('Name1 is $name');
+    print('Id1 is $id');
   }
 }
 
 void main() {
-  var std1 = Student('Parametrsied Constructor', 40); // Default Constractor
-  std1.display('Milon', 35);
+
+  Student.nameConstructor1(27, 'Tushir', 1997);
+
 }

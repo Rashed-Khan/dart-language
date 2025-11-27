@@ -1,17 +1,16 @@
 class Student {
-  void display() {
-    print('I am display Method');
+  void display(String name, int id) {
+    print('Name is $name');
+    print('Name is $id');
   }
 
-  Student() {
-    print('I am Default Constractor');
+  Student(String name, int id) {
+    print('Name is $name');
+    print('Name is $id');
   }
 }
 
 void main() {
-  var std1 = Student(); // Default Constractor
-  std1.display();
-
-
-
+  var std1 = Student('Parametrsied Constructor', 40); // Default Constractor
+  std1.display('Milon', 35);
 }
